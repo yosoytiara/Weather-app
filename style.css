@@ -1,0 +1,89 @@
+body {
+  font-family: "Exo 2", sans-serif;
+}
+h1,
+h5 {
+  text-align: left;
+}
+
+h1 {
+  font-size: 30px;
+  margin-top: 15px;
+  font-weight: bolder;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  font-size: 10px;
+  text-align: left;
+  list-style: none;
+  margin-left: -32px;
+  margin-top: -17px;
+}
+.float-left {
+  text-align: left;
+  margin-top: -39px;
+  color: white;
+  font-weight: bold;
+}
+.temp {
+  font-size: 120px;
+  text-align: center;
+  color: rgb(34, 188, 249);
+}
+
+.search {
+  text-align: center;
+}
+a:hover {
+  color: rgb(255, 193, 248);
+}
+.week-weather {
+  color: rgb(34, 188, 249);
+}
+
+.cloud {
+  text-align: center;
+  font-size: 90px;
+  color: pink;
+  margin-top: -15px;
+}
+
+.day {
+  font-size: 12px;
+}
+
+.weather-app {
+  border: 1px solid rgb(255, 255, 255);
+
+  padding: 20px;
+  max-width: 500px;
+  max-height: 800px;
+  border-radius: 20px;
+  text-align: center;
+  background: rgb(3, 215, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(3, 215, 255, 1) 0%,
+    rgba(213, 248, 255, 1) 24%,
+    rgba(185, 244, 255, 1) 50%,
+    rgba(253, 255, 255, 1) 100%
+  );
+}
+
+.imagez {
+  font-size: 100px;
+  margin-top: -39px;
+}
+
+.desc {
+  text-align: left;
+  margin-top: -15px;
+}
+
+.emoji {
+  font-size: 30px;
+  margin-bottom: -8px;
+}
