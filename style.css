@@ -12,7 +12,7 @@ h1 {
   font-weight: bolder;
 }
 a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 ul {
@@ -25,7 +25,7 @@ ul {
 .float-left {
   text-align: left;
   margin-top: -39px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 .temp {
