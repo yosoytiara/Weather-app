@@ -39,8 +39,9 @@ function formatDate(date) {
   let month = months[monthIndex];
   let currentDate = date.getDate();
 
-  return `${day}, ${month} ${currentDate} | ${hours}:${minutes}`;
+  return `${day},${month} ${currentDate} | ${hours}:${minutes}`;
 }
+//Display date
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
@@ -81,18 +82,15 @@ function searchCity(city) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
-function convertToFahrenheit(event) {
+//Fahrenheit
+function displayFahrenheightTemperature(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#temps");
-  temperatureElement.innerHTML = 66;
+  let tempNumber = document.querySelector("#temperature");
+  let temperatureSearched = Math.round(response.data.main.temp);
 }
 
-function convertToCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#celsius-link");
-}
-let selectingCelcius = document.querySelector("#celsius-link");
-selectingCelcius.addEventListener(`click`, convertToCelsius);
+let farenheightLink = document.querySelector("#fahrenheit-link");
+farenheightLink.addEventListener("click", displayFahrenheightTemperature);
 
 //Submit
 function handleSubmit(event) {
@@ -123,3 +121,16 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
+
+//
+function changeBackground() {
+  let description = document.querySelector("#description");
+  let colorDescription = description.textContent;
+  let squarecolor = document.querySelector("#weatherapp");
+  if (description === "broken clouds") {
+    squarecolor.style.background = "#000000";
+  } else if (description === "clear sky")
+    squarecolor.body.style.background = "blue";
+}
+
+changeBackground();
