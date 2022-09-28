@@ -8,7 +8,7 @@ h5 {
 }
 
 h1 {
-  font-size: 15px;
+  font-size: 25px;
   margin-top: 30px;
   font-weight: bolder;
 }
@@ -27,9 +27,13 @@ small a {
 }
 
 hr {
-  margin-top: 107px;
+  margin-top: 20px;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+}
 .button {
   border: 2px solid #000000;
   border-top: 3px solid white;
@@ -38,16 +42,17 @@ hr {
   margin-left: -20px;
 }
 .float-left {
-  text-align: center;
-
   color: rgb(0, 0, 0);
   font-weight: bold;
   padding-bottom: 20px;
+  text-align: center;
 }
 .temp {
   font-size: 70px;
   text-align: center;
   color: rgb(0, 0, 0);
+  display: block;
+  margin-right: 30px;
 }
 
 a:hover {
@@ -99,7 +104,6 @@ a:hover {
 .THRUS {
   border-radius: 15%;
   background: rgb(255, 227, 253);
-  margin-right: 10px;
 }
 
 .city-input {
@@ -123,10 +127,12 @@ a:hover {
   margin-bottom: -30px;
   padding-bottom: 0px;
   background: rgb(255, 227, 253);
-  margin-right: 10px;
+
   height: 150px;
 }
 
-img {
-  text-align: center;
+.units {
+  display: block;
+  margin-bottom: -10px;
+  margin-right: -173px;
 }
