@@ -21,25 +21,25 @@ function formatDate(date) {
   ];
   let monthIndex = date.getMonth();
   let months = [
-    "January",
-    "February",
-    "March",
-    "April",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
     "May",
     "June",
     "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Aug",
+    "Sept",
+    "Oct",
+    "Nov",
+    "Dec",
   ];
 
   let day = days[dayIndex];
   let month = months[monthIndex];
   let currentDate = date.getDate();
 
-  return `${day}| ${month}, ${currentDate}| ${hours}:${minutes}`;
+  return `${day}, ${month} ${currentDate} | ${hours}:${minutes}`;
 }
 
 function displayWeatherCondition(response) {

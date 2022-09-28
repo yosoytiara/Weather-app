@@ -26,7 +26,7 @@
     <div class="weather-app">
       <form class="search-form" id="search-form">
         <div class="row">
-          <div class="col-sm-9">
+          <div class="col-sm-6">
             <input
               type="search"
               placeholder="Type a city.."
@@ -40,15 +40,23 @@
             <input
               type="submit"
               value="Search"
-              class="form-control btn btn-outline-light"
+              class="form-control btn btn-outline-dark"
             />
+          </div>
+          <div class="col-3">
+            <button
+              id="current-location-button"
+              type="button"
+              class="btn btn-outline-dark"
+            >
+              Location
+            </button>
           </div>
         </div>
       </form>
-      <button id="current-location-button">Location</button>
 
       <h1 id="city">New York City</h1>
-
+      <p class="day" id="date">Day</p>
       <div class="float-left">
         <span class="temp" id="temperature">19</span
         ><span class="units">
@@ -63,11 +71,7 @@
       </ul>
 
       <p class="imagez">⛅️</p>
-      <!--<div class="cloud">
-        <i class="fa-solid fa-cloud-sun sun-cloud"></i>
-      </div>
-      -->
-      <p class="day" id="date">Day</p>
+
       <div class="container degree">
         <hr />
         <div class="container week-weather">
@@ -95,15 +99,13 @@
           </div>
         </div>
       </div>
+      <small>
+        <a href="https://github.com/yosoytiara/Weather-app" target="_blank"
+          >Open-souce code</a
+        >
+        by Tiara Dillard
+      </small>
     </div>
-    <p>
-      <a href="https://github.com/yosoytiara/Weather-app">Open-souce code</a>
-      Tiara Dillard
-    </p>
   </body>
   <script src="index.js"></script>
-  <script
-    src="https://kit.fontawesome.com/452d94b75d.js"
-    crossorigin="anonymous"
-  ></script>
 </html>
