@@ -21,60 +21,66 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,100&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="weather-app">
       <form class="search-form" id="search-form">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-8">
             <input
               type="search"
               placeholder="Type a city.."
               autofocus="on"
               autocomplete="off"
               id="city-input"
-              class="form-control shadow-sm"
+              class="form-control shadow-sm city-input"
             />
           </div>
           <div class="col-3">
             <input
               type="submit"
               value="Search"
-              class="form-control btn btn-outline-dark"
+              class="form-control btn btn-outline-light submitt"
             />
           </div>
-          <div class="col-3">
+          <div class="col-1">
             <button
-              id="current-location-button"
               type="button"
-              class="btn btn-outline-dark"
+              class="btn btn-info button"
+              id="current-location-button"
             >
-              Location
+              📍
             </button>
           </div>
         </div>
       </form>
 
       <h1 id="city">New York City</h1>
+
       <p class="day" id="date">Day</p>
       <div class="float-left">
         <span class="temp" id="temperature">19</span
-        ><span class="units">
+        ><span class="units" id="temps">
           <a href="#" id="celsius-link">°C</a> |
           <a href="#" id="fahrenheit-link">°F</a>
         </span>
       </div>
-      <p class="desc">SUNNY</p>
-      <ul>
-        <li>Humidty 43%</li>
-        <li>Wind 7 km/h</li>
-      </ul>
+      <p class="desc" id="description">SUNNY</p>
+      <img src="" alt="Clear" id="icon" class="float-left" />
+      <span class="hu">Humidity: <span id="humidity"> </span> %</span>
 
-      <p class="imagez">⛅️</p>
+      <span class="windy"> Wind: <span id="wind"></span> km/h </span>
+      <br />
 
-      <div class="container degree">
+      <div class="container-degree">
         <hr />
-        <div class="container week-weather">
+        <div class="container-forcast">
           <div class="row">
             <div class="col MON">
               MON

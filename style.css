@@ -1,5 +1,6 @@
 body {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
 }
 h1,
 h5 {
@@ -7,7 +8,7 @@ h5 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 15px;
   margin-top: 30px;
   font-weight: bolder;
 }
@@ -24,40 +25,36 @@ small a {
   color: blue;
   font-weight: thin;
 }
-ul {
-  font-size: 10px;
-  text-align: left;
-  list-style: none;
-  margin-left: -32px;
-  margin-top: -17px;
+
+hr {
+  margin-top: 107px;
+}
+
+.button {
+  border: 2px solid #000000;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  background-color: #fe78bf;
+  margin-left: -20px;
 }
 .float-left {
   text-align: center;
-  margin-top: -39px;
+
   color: rgb(0, 0, 0);
   font-weight: bold;
+  padding-bottom: 20px;
 }
 .temp {
-  font-size: 120px;
+  font-size: 70px;
   text-align: center;
-  color: rgb(34, 188, 249);
+  color: rgb(0, 0, 0);
 }
 
-.search {
-  text-align: center;
-}
 a:hover {
   color: rgb(55, 222, 255);
 }
 .week-weather {
   color: rgb(34, 188, 249);
-}
-
-.cloud {
-  text-align: center;
-  font-size: 90px;
-  color: pink;
-  margin-top: -15px;
 }
 
 .day {
@@ -70,16 +67,10 @@ a:hover {
   margin: 0 auto;
   padding: 20px;
   max-width: 500px;
-  max-height: 800px;
+  height: 700px;
   border-radius: 20px;
-  text-align: center;
   background-color: #838fa6;
   background-image: linear-gradient(180deg, #838fa6 0%, #c3d3d8 100%);
-}
-
-.imagez {
-  font-size: 100px;
-  margin-top: -39px;
 }
 
 .desc {
@@ -87,30 +78,55 @@ a:hover {
   margin-top: -15px;
 }
 
-.emoji {
-  font-size: 30px;
-  margin-bottom: -8px;
+.day {
+  font-size: 10px;
 }
 
 .MON {
-  background: rgb(255, 255, 255);
-  border-radius: 30%;
-  margin-right: 20px;
-}
-.TUES:hover {
-  background: rgb(0, 0, 0);
-  border-radius: 30%;
-  margin-right: 20px;
+  margin-right: 15%;
+
+  background: rgb(255, 227, 253);
 }
 
 .WED {
+  margin-right: 12%;
+
   background: rgb(255, 227, 253);
-  border-radius: 30%;
-  margin-right: 20px;
+  height: 150px;
+  width: 70px;
 }
 
 .THRUS {
+  border-radius: 15%;
   background: rgb(255, 227, 253);
-  border-radius: 30%;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+.city-input {
+  border: 2px solid #000000;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  font-size: 10px;
+  padding-bottom: 14px;
+}
+
+.submitt {
+  border: 2px solid #000000;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  background-color: #fe78bf;
+  font-size: 10px;
+  padding-bottom: 14px;
+}
+
+.containerforcast {
+  margin-bottom: -30px;
+  padding-bottom: 0px;
+  background: rgb(255, 227, 253);
+  margin-right: 10px;
+  height: 150px;
+}
+
+img {
+  text-align: center;
 }
