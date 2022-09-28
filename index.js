@@ -29,7 +29,7 @@ function formatDate(date) {
     "June",
     "July",
     "Aug",
-    "Sept",
+    "Sep",
     "Oct",
     "Nov",
     "Dec",
