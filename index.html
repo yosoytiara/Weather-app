@@ -29,7 +29,7 @@
     />
   </head>
   <body>
-    <div class="weather-app">
+    <div class="weather-app" id="weatherapp">
       <form class="search-form" id="search-form">
         <div class="row">
           <div class="col-sm-8">
@@ -65,17 +65,22 @@
 
       <p class="day" id="date">Day</p>
       <div class="float-left">
-        <span class="temp" id="temperature">19</span
-        ><span class="units" id="temps">
+        <span class="units" id="temps">
           <a href="#" id="celsius-link">°C</a> |
           <a href="#" id="fahrenheit-link">°F</a>
         </span>
+
+        <span class="temp" id="temperature">19</span>
       </div>
       <p class="desc" id="description">SUNNY</p>
-      <img src="" alt="Clear" id="icon" class="float-left" />
-      <span class="hu">Humidity: <span id="humidity"> </span> %</span>
+      <div class="icons">
+        <img src="" alt="Clear" id="icon" width="150" />
+      </div>
+      <div class="H-W">
+        <span class="hu">Humidity: <span id="humidity"> </span> %</span>
 
-      <span class="windy"> Wind: <span id="wind"></span> km/h </span>
+        <span class="windy"> Wind: <span id="wind"></span> km/h </span>
+      </div>
       <br />
 
       <div class="container-degree">
