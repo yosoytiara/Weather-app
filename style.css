@@ -17,9 +17,16 @@ a {
   text-decoration: none;
 }
 
+h5 {
+  font-size: 5px;
+  text-align: left;
+}
+
 small {
   font-size: 8px;
   font-weight: bolder;
+  display: block;
+  margin-top: 48px;
 }
 small a {
   color: rgb(209, 157, 255);
@@ -163,6 +170,7 @@ a:hover {
 
 .weather-forecast-temperatures {
   font-size: 10px;
+  margin-top: 20px;
 }
 
 .weather-forecast-temperature-min {

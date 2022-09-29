@@ -178,12 +178,12 @@ function displayForecast(response) {
             forecastDay.weather[0].icon
           }@2x.png"
           alt=""
-          width="42"
+          width="60"
         />
         <div class="weather-forecast-temperatures">
           <span class="weather-forecast-temperature-max"> ${Math.round(
             forecastDay.temp.max
-          )}° </span>
+          )}° |</span>
           <span class="weather-forecast-temperature-min"> ${Math.round(
             forecastDay.temp.min
           )}° </span>
@@ -196,4 +196,34 @@ function displayForecast(response) {
   console.log({ forecastHTML });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
+}
+
+function displayImage(icon) {
+  let iconPath = "";
+  if (icon === `01d` || icon === "01n") {
+    iconPath = "styles/sun.png";
+  } else if (icon === `02d` || icon === "02n") {
+    iconPath = "styles/clouds.png";
+  } else if (
+    icon === `03d` ||
+    icon === `04d` ||
+    icon === `03n` ||
+    icon === `04n`
+  ) {
+    iconPath = "styles/clouds.png";
+  } else if (icon === `09d` || icon === `09n`) {
+    iconPath = "styles/sun(1).png";
+  } else if (icon === `10d` || icon === `10n`) {
+    iconPath = "styles/rain(2).png";
+  } else if (icon === `11d` || icon === `11n`) {
+    iconPath = "styles/rain.png";
+  } else if (icon === `13d` || icon === `13n`) {
+    iconPath = "styles/snow.png";
+  } else if (icon === `50d` || icon === `50n`) {
+    iconPath = "styles/mist.png";
+  } else {
+    iconPath = "styles/sunny.png";
+  }
+
+  return iconPath;
 }
