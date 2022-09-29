@@ -160,3 +160,11 @@ a:hover {
 .city-input {
   background-color: rgb(255, 243, 194);
 }
+
+.weather-forecast-temperatures {
+  font-size: 10px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
