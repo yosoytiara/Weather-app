@@ -48,6 +48,16 @@ let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
+function formatDates(timestamp) {
+  let date = new Date(timestamp);
+  let dayIndex = date.getDay();
+  let days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+
+  let day = days[dayIndex];
+
+  return `${day}`;
+}
+
 //
 function getForecast(coordinates) {
   let apiKey = "04bde8cc7f569f7c5603cdbc6deb89a3";
@@ -157,12 +167,12 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 3) {
+    if (index < 4) {
       forecastHTML =
         forecastHTML +
         `
       <div class="col-3">
-        <div class="weather-forecast-date">${formatDate(forecastDay.dt)}</div>
+        <div class="weather-forecast-date">${formatDates(forecastDay.dt)}</div>
         <img
           src="http://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
