@@ -72,7 +72,7 @@ function displayWeatherCondition(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -201,28 +201,28 @@ function displayForecast(response) {
 function displayImage(icon) {
   let iconPath = "";
   if (icon === `01d` || icon === "01n") {
-    iconPath = "styles/sun.png";
+    iconPath = "images/sun.png";
   } else if (icon === `02d` || icon === "02n") {
-    iconPath = "styles/clouds.png";
+    iconPath = "images/clouds.png";
   } else if (
     icon === `03d` ||
     icon === `04d` ||
     icon === `03n` ||
     icon === `04n`
   ) {
-    iconPath = "styles/clouds.png";
+    iconPath = "images/clouds.png";
   } else if (icon === `09d` || icon === `09n`) {
-    iconPath = "styles/sun(1).png";
+    iconPath = "images/sun(1).png";
   } else if (icon === `10d` || icon === `10n`) {
-    iconPath = "styles/rain(2).png";
+    iconPath = "images/rain(2).png";
   } else if (icon === `11d` || icon === `11n`) {
-    iconPath = "styles/rain.png";
+    iconPath = "images/rain.png";
   } else if (icon === `13d` || icon === `13n`) {
-    iconPath = "styles/snow.png";
+    iconPath = "images/snow.png";
   } else if (icon === `50d` || icon === `50n`) {
-    iconPath = "styles/mist.png";
+    iconPath = "images/mist.png";
   } else {
-    iconPath = "styles/sunny.png";
+    iconPath = "images/sunny.png";
   }
 
   return iconPath;
