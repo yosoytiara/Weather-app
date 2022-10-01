@@ -49,7 +49,7 @@ let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
 function formatDates(timestamp) {
-  let date = new Date(timestamp);
+  let date = new Date(timestamp * 1000);
   let dayIndex = date.getDay();
   let days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
 
@@ -80,10 +80,7 @@ function displayWeatherCondition(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   let iconElement = document.querySelector("#icon");
-  iconElement.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
+  iconElement.setAttribute("src", displayImage(response.data.weather[0].icon));
   iconElement.setAttribute("alt", response.data.weather[0].description);
   getForecast(response.data.coord);
 }
@@ -174,9 +171,7 @@ function displayForecast(response) {
       <div class="col-3">
         <div class="weather-forecast-date">${formatDates(forecastDay.dt)}</div>
         <img
-          src="http://openweathermap.org/img/wn/${
-            forecastDay.weather[0].icon
-          }@2x.png"
+          src="${displayImage(forecastDay.weather[0].icon)}"
           alt=""
           width="60"
         />
@@ -203,7 +198,7 @@ function displayImage(icon) {
   if (icon === `01d` || icon === "01n") {
     iconPath = "images/sun.png";
   } else if (icon === `02d` || icon === "02n") {
-    iconPath = "images/clouds.png";
+    iconPath = "images/sunny.png";
   } else if (
     icon === `03d` ||
     icon === `04d` ||
@@ -212,11 +207,11 @@ function displayImage(icon) {
   ) {
     iconPath = "images/clouds.png";
   } else if (icon === `09d` || icon === `09n`) {
-    iconPath = "images/sun(1).png";
+    iconPath = "images/rain (2).png";
   } else if (icon === `10d` || icon === `10n`) {
-    iconPath = "images/rain(2).png";
-  } else if (icon === `11d` || icon === `11n`) {
     iconPath = "images/rain.png";
+  } else if (icon === `11d` || icon === `11n`) {
+    iconPath = "images/storm.png";
   } else if (icon === `13d` || icon === `13n`) {
     iconPath = "images/snow.png";
   } else if (icon === `50d` || icon === `50n`) {
